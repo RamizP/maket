@@ -30,21 +30,6 @@
         .footer a {
             color: #f8f9fa;
         }
-        .cart-counter {
-            position: relative;
-            display: inline-block;
-        }
-        .cart-counter::after {
-            content: attr(data-count);
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: red;
-            color: white;
-            border-radius: 50%;
-            padding: 5px 10px;
-            font-size: 14px;
-        }
         .carousel-inner img {
             height: 400px;
             object-fit: cover;
@@ -57,7 +42,7 @@
     <!-- Header with Navigation -->
     <header class="bg-primary text-white">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">My Product Showcase</a>
+            <a class="navbar-brand" href="#">WeaveWonders</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,15 +57,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#products">Products</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cart">Cart <span id="cart-counter" class="cart-counter" data-count="0"></span></a>
-                    </li>
                 </ul>
             </div>
         </nav>
         <div class="container text-center py-4">
-            <h1>Welcome to Our Product Showcase</h1>
-            <p>Discover our amazing products below</p>
+            <h1>Welcome to Our Products Website</h1>
+            <p>Discover our products</p>
         </div>
     </header>
 
@@ -111,7 +93,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Far Away Place"</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +121,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Freedom"</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -167,7 +149,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Mental health"</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +177,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "what we wear" black colour</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -223,7 +205,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "what we wear" grey colour</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -251,7 +233,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Los Angeles, California" white colour</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -279,7 +261,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Los Angeles, California" brown colour</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -307,7 +289,7 @@
                     <div class="card-body">
                         <h5 class="card-title">T-Shirt "Los Angeles, California" black colour</h5>
                         <p class="card-text">$20.00</p>
-                        <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+                        <a href="#contact" class="btn btn-primary btn-buy">Want to buy? Contact us</a>
                     </div>
                 </div>
             </div>
@@ -319,7 +301,11 @@
     <section id="about" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center">About Us</h2>
-            <p class="text-center">We are a company dedicated to providing the best products to our customers. Our mission is to deliver quality and satisfaction with every purchase.</p>
+            <p class="text-center">We are a very progressive textile company placed in Istambul.<br> We started our way at 2023, and already 
+                got partners in Ukraine, Azerbaijan and Turkey.<br> Our partners and customers are very satisfied with
+                 us, because of our production quality</p>
+
+                <p class="text-center">Style? Quality? Nice price? - only with WeaveWonders</p>
         </div>
     </section>
 
@@ -327,21 +313,16 @@
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center">Contact Us</h2>
-            <p class="text-center">Have questions or feedback? Reach out to us and we will be happy to assist you.</p>
+            <h6 class="text-center">Have questions or feedback? Reach out to us and we will be happy to assist you.</h6>
             <form class="text-center">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <h6 label for="email">Email:</label>
+                    <h5>weavewonderss@gmail.com</h5>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    <h6 label for="message">Phone number:</label>
+                    <h5>+994/70222/6630</h5>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
     </section>
@@ -349,7 +330,7 @@
     <!-- Footer -->
     <footer class="footer text-center">
         <div class="container">
-            <p>© 2024 My Product Showcase. All rights reserved.</p>
+            <p>© 2024 WeaveWonders. All rights reserved.</p>
         </div>
     </footer>
 
@@ -375,17 +356,7 @@
         });
     
         // Обработка нажатий на кнопку "Buy Now"
-        const buyButtons = document.querySelectorAll('.btn-buy');
-        buyButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                alert('Product added to cart!');
-                // Здесь можно добавить логику добавления товара в корзину
-                const cartCounter = document.getElementById('cart-counter');
-                const currentCount = parseInt(cartCounter.getAttribute('data-count'), 10);
-                cartCounter.setAttribute('data-count', currentCount + 1);
-            });
-        });
+        
     
         // Инициализация карусели Bootstrap
         $('.carousel').carousel({
